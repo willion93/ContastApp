@@ -1,0 +1,36 @@
+<ion-view title="Home">
+  <ion-content  class="has-header">
+    <ion-item class=" item-avatar">
+      <img ng-src="{{item.face}}">
+
+      <h2>{{item.name}}</h2>
+
+      <p>个性签名:{{item.signature}}</p>
+    </ion-item>
+
+    <ion-item class=" tabs tabs-icon-top">
+      <a class="tab-item has-badge" href="#">
+        <i class="icon" style="color: red;"
+           ng-class="{'ion-ios-heart':check,'ion-ios-heart-outline':uncheck}"
+           ng-click="changeIcon()"></i>
+        <div class="badge badge-assertive">2</div>
+        Like
+      </a>
+      <a class="tab-item" href="#">
+        <i class="icon ion-ios-chatboxes-outline"></i>
+        Comment
+      </a>
+      <a class="tab-item" href="#">
+        <i class="icon ion-ios-eye-outline"></i>
+        Share
+      </a>
+    </ion-item>
+
+    <ion-item class="item-icon-right">
+      照片墙:
+
+    </ion-item>
+
+    <a class="button button-full button-positive" href="tel:{{item.telphone}}">拨打电话</a>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,30 @@
+<ion-modal-view>
+  <ion-header-bar class="bar-positive">
+    <h1 class="title">新建联系人</h1>
+    <a class="button" ng-click="closePerson();">关闭</a>
+  </ion-header-bar>
+  <ion-content>
+    <form ng-submit="doCreate()">
+      <div class="list">
+        <label class="item item-input">
+          <span class="input-label">Name:</span>
+          <input ng-model="newUser.username"
+                 name="username"
+                 placeholder="请输入用户名"
+                 type="text">
+        </label>
+        <label class="item item-input">
+          <span class="input-label">Telphone:</span>
+          <input ng-model="newUser.telphone" type="text" placeholder="请输入电话">
+        </label>
+        <!--<label class="item item-input">-->
+          <!--<span class="input-label">Email:</span>-->
+          <!--<input ng-model="newUser.email" type="email" placeholder="请输入邮箱">-->
+        <!--</label>-->
+        <label class="item">
+          <button class="button button-full button-positive" ng-click="createContact()" type="submit">Create</button>
+        </label>
+      </div>
+    </form>
+  </ion-content>
+</ion-modal-view>

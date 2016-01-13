@@ -1,0 +1,26 @@
+.tour {
+  background-color: #ffefd6;
+  text-align: center;
+  position: absolute;
+  z-index: 100;
+}
+.tour .slider {
+  height: 100%;
+  padding-top: 80px;
+}
+.tour img {
+  max-height: 70%;
+}
+
+.alpha-nav {
+  position: fixed;
+  right: 0;
+  width: 20px;
+  height: 464px;
+  margin-top: 18%;
+  z-index: 2;
+  text-align: center;
+  font-size: 90%;
+ }
+
+
